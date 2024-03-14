@@ -9,7 +9,7 @@ public class Q25_ValidPalindrome {
 
 
 	public static boolean isPalindrome(String sentence) {
-        String str = sentence.replaceAll("[^A-Za-z]+", "").toLowerCase();
+        String str = sentence.replaceAll("[^A-Za-z0-9]+", "").toLowerCase();
         StringBuilder sb = new StringBuilder(str);
         sb.reverse();
         String ans = sb.toString();
